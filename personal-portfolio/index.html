@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio - Richa Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/3logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer / Python Developer</p>
+                <h1>
+                    Hi, I'm <spam>Richa</spam> <br> from India
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------about---------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate Web Developer skilled in HTML, CSS, JavaScript, and React.js. I love building
+                        responsive and user-friendly web applications. My goal is to create efficient, interactive, and
+                        visually appealing websites that enhance user experience. With experience in front-end and basic
+                        back-end development, I specialize in React.js, modern
+                        UI/UX design, and API integration. I continuously learn new technologies to improve my
+                        development process</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Developer</span><br>We designe frontend part</li>
+                            <li><span>Web development</span><br>We create a website</li>
+                            <li><span>FullStack Developer</span><br>We designe Frontend and backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2025-Present</span><br>Internship at Unified Mentor</li>
+                            <li><span>2024-2025</span><br>Full Stack Developer Tranning at Ducat Education</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>MCA from Uttar Pradesh Technical University(UPTU)</li>
+                            <li><span>2019</span><br>BCA fron Veer Bahadur Singh Purvanchal University</li>
+                        </ul>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------project---------------------------->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Personal Portfolio</h3>
+                        <p>This is a brief description
+                            Personal Portfolio Website (HTML, CSS, JavaScript)
+                            - Showcases skills, projects, and experience.
+                            - Includes Home, About, Projects, and Contact sections.
+                            - Features a responsive design with smooth navigation.
+                            - Interactive elements like a contact form and resume download.
+                            - Uses JavaScript for dynamic effects and improved user experience.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>This is a brief description
+                            To-Do List App (HTML, CSS, JavaScript, React.js)
+                            - Add, edit, delete, and mark tasks as completed.
+                            - Filter tasks (All, Completed, Pending).
+                            - Uses local storage to save tasks.
+                            - Responsive and user-friendly UI.
+                            - Built with React for dynamic updates</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Gym Management System</h3>
+                        <p>Gym Management System (React.js + Python Backend)
+                            - Frontend (React.js, HTML, CSS, JavaScript)
+                            - User dashboard for workouts & schedules
+                            - Trainer & membership management
+                            - Responsive & interactive UI
+                            - Backend (Python + Flask/Django, MongoDB/PostgreSQL)
+                            - Secure user authentication (JWT)
+                            - CRUD operations for members & trainers
+                            - Attendance & payment tracking
+                            - Admin panel for full control</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------------------------contact------------------------------------------------->
+
+    <div id="contact">
+        <div class="contanier">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> singhrichavns654@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 2323242424 </p>
+                    <div class="social-icons">
+                        <a href="www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/richa-singh-358931211"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/My Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright &#169 made by richa | All rights reserved</p>
+        </div>
+    </div>
+
+    <!------------------------------------------javascript----->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxU_n0ffyozDvxqByAiki85cEvHx9lOLHmqZTG16VNllyLB2bxFrA-BwzSobzFDhW1f6A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mgs = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
